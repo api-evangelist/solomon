@@ -1,8 +1,26 @@
 aid: solomon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/solomon.png
 name: Solomon
-description: 'Solomon is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Solomon (Solomon AI, solomontax.ai) is an agentic AI platform for tax
+  preparation aimed at accounting firms, automating the preparation of review-ready
+  individual 1040 returns for high-net-worth and ultra-high-net-worth clients. The
+  system interprets K-1/K-3 footnotes, applies multi-state SALT rules to K-1s, reconciles
+  rental and real estate investments, analyzes brokerage statements for foreign income,
+  and produces workpapers and audit trails, positioning itself to replace legacy tools
+  such as SurePrep and K1x. Backed by Bessemer Venture Partners. This profile was surfaced
+  as a portfolio-company lead and enriched by the API Evangelist pipeline; the company
+  publishes no public developer/API surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/solomon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Ml
+- Tax
+- Accounting
+- Artificial Intelligence
+- Fintech
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/solomon-domain-security.yml
 - type: Website
   url: https://solomontax.ai/
+- type: TermsOfService
+  url: https://solomontax.ai/terms
+- type: PrivacyPolicy
+  url: https://solomontax.ai/privacy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
